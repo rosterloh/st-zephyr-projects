@@ -1,0 +1,23 @@
+manifest:
+  defaults:
+    remote: zephyrproject
+
+  remotes:
+    - name: zephyrproject
+      url-base: https://github.com/zephyrproject-rtos
+    - name: rosterloh
+      url-base: git@github.com:rosterloh/st-zephyr-projects.git
+
+  projects:
+    - name: zephyr
+      revision: master
+      west-commands: scripts/west-commands.yml
+      import:
+        name-whitelist:
+          - cmsis
+          - ci-tools
+          - hal_st
+          - hal_stm32
+
+  self:
+    path: projects

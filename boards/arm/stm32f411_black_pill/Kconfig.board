@@ -1,0 +1,3 @@
+config BOARD_STM32F411_BLACK_PILL
+	bool "STM32F411-BLACK-PILL Development Board"
+	depends on SOC_STM32F411XE

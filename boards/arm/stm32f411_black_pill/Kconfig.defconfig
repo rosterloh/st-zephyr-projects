@@ -1,0 +1,12 @@
+# STM32F411-BLACK-PILL board configuration
+
+if BOARD_STM32F411_BLACK_PILL
+
+config BOARD
+	default "stm32f411_black_pill"
+
+config SPI_STM32_INTERRUPT
+	default y
+	depends on SPI
+
+endif # BOARD_STM32F411_BLACK_PILL

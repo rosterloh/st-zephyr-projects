@@ -1,0 +1,9 @@
+menu "ST Zephyr Projects"
+
+#rsource "subsys/Kconfig"
+#rsource "lib/Kconfig"
+#rsource "drivers/Kconfig"
+#rsource "ext/Kconfig"
+#rsource "tests/Kconfig"
+
+endmenu

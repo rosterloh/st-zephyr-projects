@@ -1,0 +1,15 @@
+identifier: stm32f411_black_pill
+name: STM32F411 Black Pill
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+ram: 128
+flash: 512
+supported:
+  - gpio
+  - i2c
+  - spi
+  - counter
