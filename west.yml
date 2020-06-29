@@ -6,7 +6,7 @@ manifest:
     - name: zephyrproject
       url-base: https://github.com/zephyrproject-rtos
     - name: rosterloh
-      url-base: git@github.com:rosterloh/st-zephyr-projects.git
+      url-base: git@github.com:rosterloh
 
   projects:
     - name: zephyr
@@ -18,6 +18,12 @@ manifest:
           - ci-tools
           - hal_st
           - hal_stm32
+          - littlefs
+
+    - name: vscode-zephyr
+      remote: rosterloh
+      revision: master
+      path: .vscode
 
   self:
     path: projects
